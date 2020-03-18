@@ -1,5 +1,5 @@
 ## MS Brinquedos
-> Site Oficial <br/> [https://msbrinquedos.com.br](http://localhost:3000) 
+> Site Oficial <br/> [MSbrinquedos](https://msbrinquedos.com.br) 
 
 > Servidor local <br/> [http://localhost:3000](http://localhost:3000) 
 
