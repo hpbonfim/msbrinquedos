@@ -1,34 +1,160 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import M from 'materialize-css';
+import { Parallax, Slide, Slider, Caption } from 'react-materialize';
+import Footer from '../Footer';
 
 const Inicio = ({ styles }) => {
-  const dummyPost = {
-    title: `Here's a blog post title`,
-    summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  };
+  
+    const contentStyle = {
+      paddingRight: 0,
+      paddingLeft: 0
+    };
+    
+    return (
+      <div style={contentStyle}>
+        <Parallax
+            image={<img alt="" src="https://i.imgur.com/RoHr7vc.png"/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
 
-  const posts = Array(20).fill(dummyPost);
+        <div className="section white">
+            <div className="row container">
+                <h2 className="header">
+                    Quem Somos
+                </h2>
+            </div>
+            <div className="row container">
+                <p className="grey-text text-darken-3 lighten-3">
+                    ...
+                    ...
+                    ...
+                </p>
+            </div>
+        </div>
 
-  const contentStyle = {
-    paddingTop: styles.showSidebar ? 20 : styles.topBarHeight + 20,
-    paddingRight: 20,
-    paddingBottom: styles.showSidebar ? 20 : styles.footerMenuHeight + 20,
-    paddingLeft: styles.showSidebar ? styles.sidebarWidth + 20 : 20
+
+        <Parallax
+            image={<img alt="" src="https://i.imgur.com/gUWFKlj.png"/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+
+        <div className="section white">
+            <div className="row container">
+                <h2 className="header">
+                    Locacoes de Brinquedos
+                </h2>
+            </div>
+            <div className="row container">
+                <p className="grey-text text-darken-3 lighten-3">
+                    ...
+                    ...
+                    ...
+                </p>
+            </div>
+        </div>
+
+
+        <Parallax
+            image={<img alt="" src="https://i.imgur.com/gUWFKlj.png"/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+
+        <div className="section white">
+            <div className="row container">
+                <h2 className="header">
+                    Locacao de Espaco para Festas
+                </h2>
+            </div>
+            <div className="row container">
+                <p className="grey-text text-darken-3 lighten-3">
+                    ...
+                    ...
+                    ...
+                </p>
+            </div>
+        </div>
+
+        <Parallax
+            image={<img alt="" src="https://i.imgur.com/RoHr7vc.png"/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+
+        <div className="section white">
+            <div className="row container">
+                <h2 className="header">
+                    Decoracao de Espaco para Festas
+                </h2>
+            </div>
+            <div className="row container">
+                <p className="grey-text text-darken-3 lighten-3">
+                    ...
+                    ...
+                    ...
+                </p>
+            </div>
+        </div>
+
+        <Parallax
+            image={<img alt="" src="https://i.imgur.com/gUWFKlj.png"/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+
+        <div className="section white">
+            <div className="row container">
+                <h2 className="header">
+                    Reformas de Brinquedos
+                </h2>
+            </div>
+            <div className="row container">
+                <p className="grey-text text-darken-3 lighten-3">
+                    ...
+                    ...
+                    ...
+                </p>
+            </div>
+        </div>
+
+        <Parallax
+            image={<img alt="" src="https://i.imgur.com/RoHr7vc.png"/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+
+        <div className="section white">
+            <div className="row container">
+                <h2 className="header">
+                    Seja nosso Parceiro
+                </h2>
+            </div>
+            <div className="row container">
+                <p className="grey-text text-darken-3 lighten-3">
+                    ...
+                    ...
+                    ...
+                </p>
+            </div>
+        </div>
+
+        <Parallax
+            image={<img alt="" src="https://i.imgur.com/gUWFKlj.png"/>}
+            options={{
+            responsiveThreshold: 0
+            }}
+        />
+
+      </div>
+    );
   };
   
-
-  return (
-    <div style={contentStyle}>
-      {posts.map((post, i) => {
-        return (
-          <div key={i} style={{ marginBottom: 40 }}>
-            <h2 style={{ marginBottom: 0 }}>{post.title}</h2>
-            <p>{post.summary}</p>
-          </div>
-        );
-      })}
-    </div>
-  );
-};
-
 export default Inicio;

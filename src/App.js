@@ -9,6 +9,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import Footer from "./pages/Footer";
 
 
 class App extends Component {
@@ -54,7 +55,9 @@ class App extends Component {
       showFooterMenuText: windowWidth > 500,
       showSidebar: windowWidth > 768,
       sidebarCollapsed,
-      sidebarWidth: sidebarCollapsed ? 45 : 150
+      sidebarWidth: sidebarCollapsed ? 45 : 150,
+      position: "fixed",
+      display: "flex"
     };
 
     // CSS DESKTOP TOPBAR
@@ -63,7 +66,9 @@ class App extends Component {
       black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
       topBarHeight: 40,
       sidebarCollapsed,
-      sidebarWidth: sidebarCollapsed ? 45 : 150
+      sidebarWidth: sidebarCollapsed ? 45 : 150,
+      position: "fixed",
+      display: "flex"
     };
 
     // CSS SOCIAL ICONS
@@ -101,20 +106,20 @@ class App extends Component {
    
     return (
       <div
-        style={{
-          backgroundColor: styles.black(0.05),
-          minHeight: "100vh",
-          position: "relative"
-        }}
-        
+      style={{
+        backgroundColor: styles.white(0.05),
+        minHeight: "100vh",
+        position: "relative"
+      }}
       >
         {styles.showSidebar ? (  <TopBar styles={stylesDesktop} /> ) : ( <TopBar styles={styles} /> )}
 
-        <Inicio styles={styles} />
+      <Inicio  styles={styles}/>
 
         {!styles.showSidebar && (
           <FooterMenu menuItems={menuItems} styles={styles} />
-        )}
+          )}
+          <Footer/>
       </div>
     );
   }

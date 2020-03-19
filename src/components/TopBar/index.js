@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashRouter, NavLink } from 'react-router-dom';
 const background = "https://i.imgur.com/h4hB86m.png?2";
 const TopBar = ({ styles }) => {
   const topBarStyle = {
@@ -20,14 +21,16 @@ const TopBar = ({ styles }) => {
 
   return (
     <div style={topBarStyle}>
-      <img src="https://i.imgur.com/aeZYg17.png" alt="MS" height="42" width="42"/> 
-      |<a href="#" style={{color: `${styles.black()}`}}>Inicio</a>|
-      <a href="#" style={{color: `${styles.black()}`}}>Reformas</a>|
-      <a href="#" style={{color: `${styles.black()}`}}>Locacoes</a>|
-      <a href="#" style={{color: `${styles.black()}`}}>Contato</a>|
+    <HashRouter>
+      <img src="https://i.imgur.com/aeZYg17.png" alt="MS" height="42" width="42"/>
+        |<NavLink to="/">Inicio</NavLink>|
+        <NavLink to="/">Locacoes</NavLink>|
+        <NavLink to="/">Reformas</NavLink>|
+        <NavLink to="/">Contato</NavLink>|
       <img src="https://i.imgur.com/O3fGyod.png" alt="MS" height="42" width="42"/> 
+    </HashRouter>
 
-    </div>
+  </div>
   );
 };
 
