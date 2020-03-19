@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import { Parallax, Tabs, Tab, Caption } from 'react-materialize';
+import React from 'react';
+import { Parallax, Tabs, Tab, Table, Card, CardTitle, MediaBox} from 'react-materialize';
 
 const Inicio = () => {
 
@@ -37,9 +37,9 @@ const Inicio = () => {
                 <img alt="" width="200" src="https://i.imgur.com/aeZYg17.png"/>
             </div>
             <div style={contentAlignStyle} >
-                <h2 className="header">
+                <h3 className="header">
                     BRINQUEDOS
-                </h2>
+                </h3>
             </div>
         </Parallax>
 
@@ -53,9 +53,9 @@ const Inicio = () => {
 {/* CONTEUDO QUEM SOMOS*/}
         <div className="section white">
             <div className="row container">
-                <h2 className="header">
+                <h3 className="header">
                     {titulos.quemSomos}
-                </h2>
+                </h3>
                  
             </div>
             <div className="row container">
@@ -87,7 +87,21 @@ const Inicio = () => {
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
                         Sua Festa comeca aqui! 📲
                         </h5>
-                        <img alt="" src="http://lorempixel.com/780/580/nature/1"/>
+                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
+                    </Tab>
+                    <Tab  
+                        options={{
+                        duration: 300,
+                        onShow: null,
+                        responsiveThreshold: Infinity,
+                        swipeable: true
+                        }}
+                        title="👇"
+                    >
+                        <h5 style={contentAlignStyle} className="light text-lighten-3">
+                            Diversao garantida! 🎉
+                        </h5>
+                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
                     </Tab>
                     <Tab  
                         options={{
@@ -100,24 +114,9 @@ const Inicio = () => {
 
                     >
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
-                            Diversao garantida! 🎉
-                        </h5>
-                        <img alt="" src="http://lorempixel.com/780/580/nature/2"/>
-                    </Tab>
-                    <Tab  
-                        options={{
-                        duration: 300,
-                        onShow: null,
-                        responsiveThreshold: Infinity,
-                        swipeable: true
-                        }}
-                        title="👇"
-
-                >
-                        <h5 style={contentAlignStyle} className="light text-lighten-3">
                         Locacoes a pronta entrega! ⏱
                         </h5>
-                        <img alt="" src="http://lorempixel.com/780/580/nature/3"/>
+                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
                     </Tab>  
                     <Tab  
                         options={{
@@ -132,7 +131,7 @@ const Inicio = () => {
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
                             Comprometimento! 📝
                         </h5>
-                        <img alt="" src="http://lorempixel.com/780/580/nature/4"/>
+                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
                     </Tab>  
                     <Tab  
                         options={{
@@ -147,7 +146,7 @@ const Inicio = () => {
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
                             Qualidade e Seguranca! 🛡
                         </h5>
-                        <img alt="" src="http://lorempixel.com/780/580/nature/1"/>
+                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
                     </Tab>  
                 </Tabs>
             </div>
@@ -161,23 +160,156 @@ const Inicio = () => {
             responsiveThreshold: 0
             }}
         />
-
+{/*CATALOGO*/}
         <div className="section white">
             <div className="row container">
-                <h2 className="header">
-                    Locacoes de Brinquedos
-                </h2>
-            </div>
-            <div className="row container">
-                <p className="grey-text text-darken-3 lighten-3">
-                    ...
-                    ...
-                    ...
-                </p>
+                <h3 style={contentAlignStyle} className="header">
+                    Catalogo
+                </h3>
+
+{/*LOCACAO DE MESAS E CADEIRAS*/}
+                <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locacao de Mesas e Cadeiras</h4></b>              
+                <Table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                        </tr>
+                    </tbody>
+                </Table>
+
+{/*LOCACAO DE BRINQUEDOS*/}
+                <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locacao de Brinquedos</h4></b>              
+                <Table>
+                    <tbody>
+{/* TABLE CARD 1*/}
+                        <tr>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                        </tr>
+{/* TABLE CARD 2*/}
+                        <tr>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                        </tr>
+{/* TABLE CARD 3*/}
+<tr>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                        </tr>
+{/* TABLE CARD 4*/}
+<tr>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                        </tr>
+{/* TABLE CARD 5*/}
+                        <tr>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                        </tr>
+{/* TABLE CARD 6*/}
+                        <tr>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                            <td>
+                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
+                                    <p>Altura:</p>
+                                    <p>Largura:</p>
+                                    <p>Comprimento:</p>
+                                    <p>Preco:</p>
+                                </Card>
+                            </td>
+                        </tr>       
+                    </tbody>
+                </Table>
             </div>
         </div>
 
-
+{/*PARALLAX ESPACO PARA FESTAS*/}
         <Parallax
             image={<img alt="" src="https://lh5.googleusercontent.com/p/AF1QipN4siaiLl9sAwpYzJ54ezyfELJ1MI-sRukuXUHS=w540-h889-p-k-no"/>}
             options={{
@@ -187,82 +319,35 @@ const Inicio = () => {
 
         <div className="section white">
             <div className="row container">
-                <h2 className="header">
+                <h3 className="header" style={contentAlignStyle}>
                     Locacao de Espaco para Festas
-                </h2>
+                </h3>
+                <h6 style={contentAlignStyle}>Excelente espaco para realizacoes de pequenas e medios eventos:</h6> <br/>
             </div>
-            <div className="row container">
-                <p className="grey-text text-darken-3 lighten-3">
-                    ...
-                    ...
-                    ...
-                </p>
+            <div style={contentAlignStyle}>
+                <MediaBox
+                    options={{
+                        inDuration: 275,
+                        onCloseEnd: null,
+                        onCloseStart: null,
+                        onOpenEnd: null,
+                        onOpenStart: null,
+                        outDuration: 200
+                    }}
+                    >
+                    <img
+                        alt=""
+                        src="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"
+                        width="350"
+                    />
+                    </MediaBox>
             </div>
-        </div>
-
-        <Parallax
-            image={<img alt="" src="https://lh5.googleusercontent.com/p/AF1QipNY2ZCvJkpidsVoIbAlmSxpS8k3XxLVI4qNsDIW=w540-h585-p-k-no"/>}
-            options={{
-            responsiveThreshold: 0
-            }}
-        />
-
-        <div className="section white">
-            <div className="row container">
-                <h2 className="header">
-                    Decoracao de Espaco para Festas
-                </h2>
-            </div>
-            <div className="row container">
-                <p className="grey-text text-darken-3 lighten-3">
-                    ...
-                    ...
-                    ...
-                </p>
-            </div>
-        </div>
-
-        <Parallax
-            image={<img alt="" src="https://lh5.googleusercontent.com/p/AF1QipPmecp2rNCzEgLKRYygIRHiSuRkC7lOO5j0oLJu=w540-h889-p-k-no"/>}
-            options={{
-            responsiveThreshold: 0
-            }}
-        />
-
-        <div className="section white">
-            <div className="row container">
-                <h2 className="header">
-                    Reformas de Brinquedos
-                </h2>
-            </div>
-            <div className="row container">
-                <p className="grey-text text-darken-3 lighten-3">
-                    ...
-                    ...
-                    ...
-                </p>
-            </div>
-        </div>
-
-        <Parallax
-            image={<img alt="" src="https://lh5.googleusercontent.com/p/AF1QipN3AOH01OZG2s2AYjda32XwVOs_6PlxTROtZryV=w540-h536-p-k-no"/>}
-            options={{
-            responsiveThreshold: 0
-            }}
-        />
-
-        <div className="section white">
-            <div className="row container">
-                <h2 className="header">
-                    Seja nosso Parceiro
-                </h2>
-            </div>
-            <div className="row container">
-                <p className="grey-text text-darken-3 lighten-3">
-                    ...
-                    ...
-                    ...
-                </p>
+            <div  className="grey-text text-darken-3 lighten-3">
+                <b >
+                    <p style={contentAlignStyle}>&nbsp;✓ Espacos para festas com decoracoes sob demanda(opcional).<br/></p>
+                    <p style={contentAlignStyle}>&nbsp;✓ Mesas e cadeiras a disposicao.<br/></p>
+                    <p style={contentAlignStyle}> &nbsp;✓ Diversos brinquedos para livre utilizacao.<br/></p>
+                </b>              
             </div>
         </div>
 
