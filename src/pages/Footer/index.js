@@ -15,16 +15,16 @@ const Footer = () => (
         <div>
             <small><b>NOSSAS REDES SOCIAIS </b></small>
             <ul className="icons">
-                <li><a href="#"><FontAwesomeIcon size="2x"  icon={faFacebook} /></a></li>
+                <li><a href="https://pt-br.facebook.com/msbrinquedos/"><FontAwesomeIcon size="2x"  icon={faFacebook} /></a></li>
                 <li><a href="#"><FontAwesomeIcon size="2x"  icon={faInstagram} style={{color:'rgb(228,64,95)'}} /></a></li>
             </ul>
         </div>
         <div>
                 <small><b>ENTRE EM CONTATO </b></small>
             <ul className="icons">
-                <li><a href="#"><FontAwesomeIcon size="2x" icon={faWhatsapp} style={{color:'green'}} /></a></li>
-                <li><a href="#"><FontAwesomeIcon size="2x" icon={faPhone} style={{color:'black'}} /></a></li>
-                <li><a href="#"><FontAwesomeIcon size="2x"  icon={faEnvelopeSquare} style={{color:'#c71610'}}/></a></li>
+                <li><a href="https://wa.me/5511940182385?text=Oi,%20 MS Brinquedos!%20Quero%20solicitar%20um%20orçamento!"><FontAwesomeIcon size="2x" icon={faWhatsapp} style={{color:'green'}} /></a></li>
+                <li><a href="tel:+5511940182385"><FontAwesomeIcon size="2x" icon={faPhone} style={{color:'black'}} /></a></li>
+                <li><a href="mailto:salvadorbrinquedos@hotmail.com?subject=Solicitaçao%20de%20Orçamento&body=Gostaria%20de%20alugar%20os%20brinquedos%20que%20escolhi%20no%20site%20https://www.msbrinquedos.com.br"><FontAwesomeIcon size="2x"  icon={faEnvelopeSquare} style={{color:'#c71610'}}/></a></li>
             </ul>
         </div>
         <div>

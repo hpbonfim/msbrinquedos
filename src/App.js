@@ -18,7 +18,6 @@ class App extends Component {
       windowWidth: 0,
       windowHeight: 0
     };
-
     this.updateDimensions = this.updateDimensions.bind(this);
   }
 
@@ -43,7 +42,7 @@ class App extends Component {
 
     const sidebarCollapsed = windowWidth < 1100;
 
-    // CSS MOBILE TOPBAR
+    // CSS TOPBAR
     const styles = {
       green: (opacity = 1) => `rgba(37,211,102, ${opacity})`,
       white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
@@ -53,17 +52,6 @@ class App extends Component {
       footerMenuHeight: 30,
       showFooterMenuText: windowWidth > 500,
       showMobilebar: windowWidth > 768,
-      sidebarCollapsed,
-      sidebarWidth: sidebarCollapsed ? 45 : 150,
-      position: "fixed",
-      display: "flex"
-    };
-
-    // CSS DESKTOP TOPBAR
-    const stylesDesktop = {
-      white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-      black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-      topBarHeight: 40,
       sidebarCollapsed,
       sidebarWidth: sidebarCollapsed ? 45 : 150,
       position: "fixed",
@@ -97,9 +85,9 @@ class App extends Component {
     const menuItems = [
       { icon: <a style={logoInstagramStyle} href="#" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>, text: "Instagram" },
       { icon: <a href="https://pt-br.facebook.com/msbrinquedos/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>, text: "Facebook" },
-      { icon: <a style={logoWppStyle} href="https://wa.me/5511940182385?text=Oi,%20 MS Brinquedos!%20Quero%20solicitar%20um%20orçamento!" target="_blank"><FontAwesomeIcon icon={faWhatsapp} /></a>, text: "WhatsApp" },
-      { icon: <a style={logoWhiteStyle} href="tel:+5511940182385" target="_blank"><FontAwesomeIcon icon={faPhoneSquareAlt} /></a>, text: "Telefone" },
-      { icon: <a style={logoWhiteStyle} href="mailto:salvadorbrinquedos@hotmail.com?subject=Solicitaçao%de%20Orçamento&body=Gostaria%20de%20alugar%20os%20brinquedos%20que%20escolhi%20no%20site%20https://www.msbrinquedos.com.br" target="_blank"><FontAwesomeIcon icon={faEnvelopeSquare} /></a>, text: "Email" }
+      { icon: <a style={logoWppStyle} href="https://wa.me/5511940182385?text=Oi,%20 MS Brinquedos!%20Quero%20solicitar%20um%20orçamento!"><FontAwesomeIcon icon={faWhatsapp} /></a>, text: "WhatsApp" },
+      { icon: <a style={logoWhiteStyle} href="tel:+5511940182385"><FontAwesomeIcon icon={faPhoneSquareAlt} /></a>, text: "Telefone" },
+      { icon: <a style={logoWhiteStyle} href="mailto:salvadorbrinquedos@hotmail.com?subject=Solicitaçao%20de%20Orçamento&body=Gostaria%20de%20alugar%20os%20brinquedos%20que%20escolhi%20no%20site%20https://www.msbrinquedos.com.br" target="_blank"><FontAwesomeIcon icon={faEnvelopeSquare} /></a>, text: "Email" }
     ];
 
    
