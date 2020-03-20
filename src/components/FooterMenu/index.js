@@ -11,7 +11,7 @@ const FooterMenu = ({ menuItems, styles }) => {
         backgroundColor: "#333",
         color: "#fff",
         position: "fixed",
-        bottom: 0
+        top: 0
       }}
     >
       

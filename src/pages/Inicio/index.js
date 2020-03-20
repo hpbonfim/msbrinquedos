@@ -1,5 +1,11 @@
 import React from 'react';
-import { Parallax, Tabs, Tab, Table, Card, CardTitle, MediaBox} from 'react-materialize';
+import { Parallax} from 'react-materialize';
+import QuemSomos from "../QuemSomos";
+//import Brinquedos from '../Catalogo/Brinquedos';
+import Outros from '../Catalogo/Outros';
+import Salao from '../Salao';
+import Brinquedos from '../Catalogo/Brinquedos';
+
 
 const Inicio = () => {
 
@@ -11,15 +17,17 @@ const Inicio = () => {
     const contentAlignStyle = {
         justifyContent: "center",
         alignItems: "center",
-        display: "flex"
+        display: "flex",
+        textAlign: "center"
       };
 
-    const titulos = {
-        quemSomos: "Quem Somos?",
-        reformas: "Somos uma empresa especializada",
-        brinquedos: "Somos uma empresa especializada",
-        locacoes: "Somos uma empresa especializada",
-        decoracoes: "Somos uma empresa especializada",
+    const backgroundImage = {
+        logotipo: "https://firebasestorage.googleapis.com/v0/b/ms-brinquedos.appspot.com/o/logo.png?alt=media&token=b9554090-f2fc-49b8-abff-507ac8189fa3",
+        first: "https://firebasestorage.googleapis.com/v0/b/ms-brinquedos.appspot.com/o/fundo-baloes-azul.png?alt=media&token=cbeeaf93-4cc1-4cc6-994e-a28aff2025ff",
+        second: "https://firebasestorage.googleapis.com/v0/b/ms-brinquedos.appspot.com/o/fundo-brinquedos4.jpg?alt=media&token=41e1db7c-7ce0-40ad-854c-183c1921cf95",
+        three: "https://firebasestorage.googleapis.com/v0/b/ms-brinquedos.appspot.com/o/fundo-brinquedos1.jpg?alt=media&token=71ae6696-f636-4041-b38a-700aae0a0fe2",
+        four: "https://firebasestorage.googleapis.com/v0/b/ms-brinquedos.appspot.com/o/fundo-brinquedos.jpg?alt=media&token=404d6225-7176-457c-969f-9020a7751eb2",
+        five: "https://firebasestorage.googleapis.com/v0/b/ms-brinquedos.appspot.com/o/fundo-nuvem.png?alt=media&token=4b2c3310-27ff-42af-b8ae-8fef877f7b2d"
     };
 
 
@@ -28,13 +36,11 @@ const Inicio = () => {
         
 {/* PARALLAX INICIAL + LOGOTIPO EMPRESA + TEXTO*/}
         <Parallax
-            image={<img alt="" src="https://i.imgur.com/RoHr7vc.png"/>}
-            options={{
-                responsiveThreshold: 0
-            }}
+            image={<img alt="" src={backgroundImage.first} />}
+            options={{ responsiveThreshold: 0 }}
         >     
             <div style={contentAlignStyle}>
-                <img alt="" width="200" src="https://i.imgur.com/aeZYg17.png"/>
+                <img alt="" width="200" src={backgroundImage.logotipo}/>
             </div>
             <div style={contentAlignStyle} >
                 <h3 className="header">
@@ -43,319 +49,46 @@ const Inicio = () => {
             </div>
         </Parallax>
 
-{/* WHITE SPACE */}
-        <div className="section white">
-            <div className="row container">
-            
-            </div>
-        </div>
 
 {/* CONTEUDO QUEM SOMOS*/}
         <div className="section white">
-            <div className="row container">
-                <h3 className="header">
-                    {titulos.quemSomos}
-                </h3>
-                 
-            </div>
-            <div className="row container">
-                <div className="grey-text text-darken-3 lighten-3">
-                    Somos uma empresa especializada em: <br/>
-                    <b>
-                        <p>&nbsp;✓ Locacao de espacos para festas com decoracoes sob demanda(opcional).<br/></p>
-                        <p>&nbsp;✓ Locacao de brinquedos, mesas e cadeiras sob encomenda.<br/></p>
-                        <p> &nbsp;✓ Reformas de diversos brinquedos inflaveis.<br/></p>
-                    </b>              
-                </div>
-
-{/* QUEM SOMOS TABS*/}
-                <Tabs
-                    className="tabs-fixed-width"
-                    options={{
-                        swipeable: true
-                    }}
-                    >
-                    <Tab  
-                        options={{
-                        duration: 300,
-                        onShow: null,
-                        responsiveThreshold: Infinity,
-                        swipeable: true
-                        }}
-                        title="👇"
-                    >
-                        <h5 style={contentAlignStyle} className="light text-lighten-3">
-                        Sua Festa comeca aqui! 📲
-                        </h5>
-                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
-                    </Tab>
-                    <Tab  
-                        options={{
-                        duration: 300,
-                        onShow: null,
-                        responsiveThreshold: Infinity,
-                        swipeable: true
-                        }}
-                        title="👇"
-                    >
-                        <h5 style={contentAlignStyle} className="light text-lighten-3">
-                            Diversao garantida! 🎉
-                        </h5>
-                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
-                    </Tab>
-                    <Tab  
-                        options={{
-                        duration: 300,
-                        onShow: null,
-                        responsiveThreshold: Infinity,
-                        swipeable: true
-                        }}
-                        title="👇"
-
-                    >
-                        <h5 style={contentAlignStyle} className="light text-lighten-3">
-                        Locacoes a pronta entrega! ⏱
-                        </h5>
-                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
-                    </Tab>  
-                    <Tab  
-                        options={{
-                        duration: 300,
-                        onShow: null,
-                        responsiveThreshold: Infinity,
-                        swipeable: true
-                        }}
-                        title="👇"
-
-                    >
-                        <h5 style={contentAlignStyle} className="light text-lighten-3">
-                            Comprometimento! 📝
-                        </h5>
-                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
-                    </Tab>  
-                    <Tab  
-                        options={{
-                        duration: 300,
-                        onShow: null,
-                        responsiveThreshold: Infinity,
-                        swipeable: true
-                        }}
-                        title="👇"
-
-                    >
-                        <h5 style={contentAlignStyle} className="light text-lighten-3">
-                            Qualidade e Seguranca! 🛡
-                        </h5>
-                        <img alt="" src="https://i.imgur.com/RoHr7vc.png"/>
-                    </Tab>  
-                </Tabs>
-            </div>
+           <QuemSomos/>
         </div>
-
-{/* 4 IMAGEM QUEM SOMOS SLIDER*/}
 
         <Parallax
-            image={<img alt="" src="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"/>}
-            options={{
-            responsiveThreshold: 0
-            }}
+            image={<img alt="" src={backgroundImage.second} />}
+            options={{ responsiveThreshold: 0 }}
         />
 {/*CATALOGO*/}
+{/*OUTROS*/}
         <div className="section white">
-            <div className="row container">
-                <h3 style={contentAlignStyle} className="header">
-                    Catalogo
-                </h3>
-
-{/*LOCACAO DE MESAS E CADEIRAS*/}
-                <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locacao de Mesas e Cadeiras</h4></b>              
-                <Table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                        </tr>
-                    </tbody>
-                </Table>
-
-{/*LOCACAO DE BRINQUEDOS*/}
-                <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locacao de Brinquedos</h4></b>              
-                <Table>
-                    <tbody>
-{/* TABLE CARD 1*/}
-                        <tr>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                        </tr>
-{/* TABLE CARD 2*/}
-                        <tr>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                        </tr>
-{/* TABLE CARD 3*/}
-<tr>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                        </tr>
-{/* TABLE CARD 4*/}
-<tr>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                        </tr>
-{/* TABLE CARD 5*/}
-                        <tr>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                        </tr>
-{/* TABLE CARD 6*/}
-                        <tr>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                            <td>
-                                <Card header={<CardTitle image="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"></CardTitle>}>
-                                    <p>Altura:</p>
-                                    <p>Largura:</p>
-                                    <p>Comprimento:</p>
-                                    <p>Preco:</p>
-                                </Card>
-                            </td>
-                        </tr>       
-                    </tbody>
-                </Table>
-            </div>
+            <Outros/>
         </div>
+
+        <Parallax
+            image={<img alt="" src={backgroundImage.three} />}
+            options={{ responsiveThreshold: 0 }}
+            />
+
+{/*BRINQUEDOS*/}
+        <div className="section white">
+                <Brinquedos/>
+        </div>
+
 
 {/*PARALLAX ESPACO PARA FESTAS*/}
         <Parallax
-            image={<img alt="" src="https://lh5.googleusercontent.com/p/AF1QipN4siaiLl9sAwpYzJ54ezyfELJ1MI-sRukuXUHS=w540-h889-p-k-no"/>}
-            options={{
-            responsiveThreshold: 0
-            }}
+            image={<img alt="" src={backgroundImage.four}/>}
+            options={{ responsiveThreshold: 0 }}
         />
 
         <div className="section white">
-            <div className="row container">
-                <h3 className="header" style={contentAlignStyle}>
-                    Locacao de Espaco para Festas
-                </h3>
-                <h6 style={contentAlignStyle}>Excelente espaco para realizacoes de pequenas e medios eventos:</h6> <br/>
-            </div>
-            <div style={contentAlignStyle}>
-                <MediaBox
-                    options={{
-                        inDuration: 275,
-                        onCloseEnd: null,
-                        onCloseStart: null,
-                        onOpenEnd: null,
-                        onOpenStart: null,
-                        outDuration: 200
-                    }}
-                    >
-                    <img
-                        alt=""
-                        src="https://lh5.googleusercontent.com/p/AF1QipMwYzQOEjsQChahHzaKKltvNPk9xYl2PnHl2wkR=w540-h585-p-k-no"
-                        width="350"
-                    />
-                    </MediaBox>
-            </div>
-            <div  className="grey-text text-darken-3 lighten-3">
-                <b >
-                    <p style={contentAlignStyle}>&nbsp;✓ Espacos para festas com decoracoes sob demanda(opcional).<br/></p>
-                    <p style={contentAlignStyle}>&nbsp;✓ Mesas e cadeiras a disposicao.<br/></p>
-                    <p style={contentAlignStyle}> &nbsp;✓ Diversos brinquedos para livre utilizacao.<br/></p>
-                </b>              
-            </div>
+           <Salao/>
         </div>
 
         <Parallax
-            image={<img alt="" src="https://i.imgur.com/gUWFKlj.png"/>}
-            options={{
-            responsiveThreshold: 0
-            }}
+            image={<img alt="" src={backgroundImage.five} />}
+            options={{ responsiveThreshold: 0 }}
         />
 
       </div>

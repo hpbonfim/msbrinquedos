@@ -1,8 +1,8 @@
 {
-  "name": "MS Brinquedos",
-  "short_name": "MS Brinquedos",
+  "name": "MS BRINQUEDOS",
+  "short_name": "MS BRINQUEDOS",
   "theme_color": "#4b57c6",
-  "background_color": "#4b57c6",
+  "background_color": "#ffffff",
   "display": "standalone",
   "start_url": "/",
   "icons": [
