@@ -26,7 +26,7 @@ const QuemSomos = () => {
                     Quem Somos?
                 </h3>
             </div>
-            <div className="row container" style={{textAlign: "center"}}>
+            <div className="row container">
                 <div className="grey-text text-darken-3 lighten-3">
                     <h5>Somos uma empresa especializada em: </h5><br/>
                     <b>

@@ -4,6 +4,7 @@ import Inicio from "./pages/Inicio";
 import Footer from "./components/Footer";
 import FooterDesktop from "./components/FooterDesktop";
 import FloatButton from "./components/FloatButton";
+import InicioDesktop from "./pages/InicioDesktop";
 
 
 
@@ -44,8 +45,7 @@ class App extends Component {
       black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
       topBarHeight: 40,
       footerMenuHeight: 30,
-      showFooter: windowWidth < 500,
-      showMobilebar: windowWidth > 768,
+      mobileVersion: windowWidth < 500,
       sidebarCollapsed,
       sidebarWidth: sidebarCollapsed ? 45 : 150,
       position: "fixed",
@@ -60,12 +60,16 @@ class App extends Component {
           position: "relative"
         }}
       >
+{/*VERSAO DESKTOP*/}
 
-      <Inicio  styles={styles}/>
+      {!styles.mobileVersion && ( <InicioDesktop />  )}
+      {!styles.mobileVersion && ( <FooterDesktop />  )}
       
-      {!styles.showMobilebar && ( <FloatButton/> )}
-      {!styles.showFooter && ( <FooterDesktop />  )}
-      {styles.showFooter && ( <Footer />  )}
+{/*VERSAO MOBILE*/}
+
+      {styles.mobileVersion && ( <Inicio  styles={styles}/> )}
+      {styles.mobileVersion && ( <FloatButton/> )}
+      {styles.mobileVersion && ( <Footer />  )}
 
       </div>
     );
