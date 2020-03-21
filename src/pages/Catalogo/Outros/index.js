@@ -6,8 +6,6 @@ const Outros = () => {
 
     const contentAlignStyle = {
         justifyContent: "center",
-        alignItems: "center",
-        display: "flex",
         textAlign: "center"
       };
 
@@ -25,26 +23,21 @@ const Outros = () => {
     return (
         <div>
 {/*CATALOGO*/}
-            <div className="row container">
 {/*LOCACAO DE MESAS E CADEIRAS*/}
             <Table>
                 <tbody>
                     <tr>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <img width="100" height="100" src={imagens.cadeira}/>
-                                    <p><b>Cadeiras</b></p>
-                                </CardPanel>
-                            </div>
+                            <CardPanel style={contentAlignStyle}>
+                                <img width="100" height="100" src={imagens.cadeira}/>
+                                <p><b>Cadeiras</b></p>
+                            </CardPanel>
                         </td>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <img width="100" height="100" src={imagens.mesa}/>
-                                    <p><b>Mesas</b></p>
-                                </CardPanel>
-                            </div>
+                            <CardPanel style={contentAlignStyle}>
+                                <img width="100" height="100" src={imagens.mesa}/>
+                                <p><b>Mesas</b></p>
+                            </CardPanel>
 
                         </td>
                     </tr>
@@ -56,26 +49,21 @@ const Outros = () => {
                 <tbody>
                     <tr>
                         <td >
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <img width="100" height="100" src={imagens.barracaPipoca} style={contentAlignStyle}/>
-                                    <p><b>Barraca de <br/> Pipocas</b></p>
-                                </CardPanel>
-                            </div>
+                            <CardPanel style={contentAlignStyle}>
+                                <img width="100" height="100" src={imagens.barracaPipoca}/>
+                                <p><b>Barraca de <br/> Pipocas</b></p>
+                            </CardPanel>
                         </td>
-                        <td >
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <img width="100" height="100" src={imagens.barracaAlgodao} />
-                                    <p><b>Barraca de <br/> Algodão doce</b></p>
-                                </CardPanel>
-                            </div>
+                        <td>
+                            <CardPanel style={contentAlignStyle}>
+                                <img width="100" height="100" src={imagens.barracaAlgodao} />
+                                <p><b>Barraca de <br/> Algodão doce</b></p>
+                            </CardPanel>
                         </td>
                     </tr>
                 </tbody>
             </Table>
 
-        </div>
     </div>
     );
   };

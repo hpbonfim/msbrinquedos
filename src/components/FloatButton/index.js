@@ -4,28 +4,12 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faHeadset } from "@fortawesome/free-solid-svg-icons";
 import { Button } from 'react-materialize';
 
 
 
 const FloatButton = () => {
-
-    // CSS SOCIAL ICONS
-    const logoWhiteStyle = {
-        textAlign: "center",
-        color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-        marginBottom: 60,
-        fontWeight: "bold"
-      };
-  
-    // CSS SOCIAL ICONS
-    const logoWppStyle = {
-        textAlign: "center",
-        color: (opacity = 1) => `rgba(37,211,102, ${opacity})`,
-        marginBottom: 60,
-        fontWeight: "bold"
-      };
 
       function facebook() {
         window.open("https://pt-br.facebook.com/msbrinquedos/", "_blank")
@@ -53,7 +37,7 @@ const FloatButton = () => {
                 }}
                 floating
                 large
-                icon={<FontAwesomeIcon icon={faLink} />}
+                icon={<FontAwesomeIcon icon={faHeadset} />}
                 node="button"
             >
                 <Button

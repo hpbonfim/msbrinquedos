@@ -109,7 +109,7 @@ const BrinquedosDesktop = () => {
                                         >
                                         <img width="150" height="150" src={ imagens.castelinho }/>
                                     </MediaBox>
-                                    <p><b>Castelinho </b></p>
+                                    <p><b>Castelinho<br/>Pula-Pula </b></p>
                                 </CardPanel>
                             </div>
                         </td>
@@ -150,7 +150,7 @@ const BrinquedosDesktop = () => {
                                         >
                                     <img width="150" height="150" src={ imagens.pulaMed }/>
                                     </MediaBox>
-                                    <p><b>Pula-Pula<br/>Medio </b></p>
+                                    <p><b>Pula-Pula<br/>Médio </b></p>
                                 </CardPanel>
                             </div>
                         </td>
@@ -210,7 +210,7 @@ const BrinquedosDesktop = () => {
                                         >
                                         <img width="150" height="150" src={ imagens.piscinaBolinhaPeq }/>
                                     </MediaBox>
-                                    <p><b> Piscina de<br/>Bolinha<br/>Pequeno</b></p>
+                                    <p><b> Piscina de<br/>Bolinha Pequeno</b></p>
                                 </CardPanel>
                             </div>
                         </td>
@@ -229,7 +229,7 @@ const BrinquedosDesktop = () => {
                                         >
                                         <img width="150" height="150" src={ imagens.piscinaBolinhaGra }/>
                                     </MediaBox>
-                                    <p><b> Piscina de<br/>Bolinha<br/>Grande</b></p>
+                                    <p><b> Piscina de<br/>Bolinha Grande</b></p>
                                 </CardPanel>
                             </div>
                         </td>

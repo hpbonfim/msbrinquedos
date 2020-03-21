@@ -21,7 +21,7 @@ const Footer = () => {
          <div>
                 <small><b>COMPARTILHE!</b></small>
             <ul className="icons">
-                <li><a href="http://wa.me/?text=Salve o MS Brinquedos no seu celular!" data-action="share/whatsapp/share"><FontAwesomeIcon size="2x" icon={faWhatsapp} style={{color:'#075e54'}} /></a></li>
+                <li><a href="http://wa.me/?text=Salve o MS Brinquedos no seu celular! https://msbrinquedos.com.br/" data-action="share/whatsapp/share"><FontAwesomeIcon size="2x" icon={faWhatsapp} style={{color:'#075e54'}} /></a></li>
                 <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://msbrinquedos.com.br&title=&summary=&source="><FontAwesomeIcon size="2x" icon={faLinkedinIn} style={{color:'#0e76a8'}} /></a></li>
                 <li><a href="https://twitter.com/home?status=https://msbrinquedos.com.br "><FontAwesomeIcon size="2x"  icon={faTwitter} style={{color:'#00acee'}} /></a></li>
                 <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://msbrinquedos.com.br"><FontAwesomeIcon size="2x" icon={faFacebookF} style={{color:'#3b5998'}} /></a></li>

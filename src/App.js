@@ -45,7 +45,7 @@ class App extends Component {
       black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
       topBarHeight: 40,
       footerMenuHeight: 30,
-      mobileVersion: windowWidth < 500,
+      mobileVersion: windowWidth < 800,
       sidebarCollapsed,
       sidebarWidth: sidebarCollapsed ? 45 : 150,
       position: "fixed",

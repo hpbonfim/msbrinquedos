@@ -16,7 +16,7 @@ const Salao = () => {
         <div>
             <div className="row container">
                 <h3 className="header" style={contentAlignStyle}>
-                    Locação de Espaço para Festas
+                    Locação de <br/>Espaço para Festas
                 </h3>
                 <h6 style={contentAlignStyle}>Excelente espaço para realizações de pequenas e médios eventos:</h6> <br/>
                 <b >
@@ -43,6 +43,9 @@ const Salao = () => {
                     />
                     </MediaBox>
             </div>
+            <br></br>
+            <hr></hr>
+
       </div>
     );
   };

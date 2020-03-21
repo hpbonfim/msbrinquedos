@@ -5,6 +5,7 @@ import QuemSomos from "../QuemSomos";
 import Salao from '../Salao';
 import OutrosDesktop from '../CatalogoDesktop/Outros';
 import BrinquedosDesktop from '../CatalogoDesktop/Brinquedos';
+import SlideTabs from '../../components/SlideTabs';
 
 
 
@@ -89,6 +90,9 @@ const InicioDesktop = () => {
             <br/>
             <br/>
         </Parallax>
+{/*SLIDETABS*/}
+
+        <SlideTabs/>
 {/*CATALOGO*/}
 {/*OUTROS*/}
         <div className="section white">

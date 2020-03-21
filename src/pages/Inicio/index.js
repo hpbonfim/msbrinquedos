@@ -5,6 +5,8 @@ import QuemSomos from "../QuemSomos";
 import Outros from '../Catalogo/Outros';
 import Salao from '../Salao';
 import Brinquedos from '../Catalogo/Brinquedos';
+import SlideTabs from '../../components/SlideTabs';
+
 
 
 const Inicio = () => {
@@ -17,7 +19,6 @@ const Inicio = () => {
     const contentAlignStyle = {
         justifyContent: "center",
         alignItems: "center",
-        display: "flex",
         textAlign: "center"
       };
 
@@ -87,6 +88,8 @@ const Inicio = () => {
               <br/>
               <br/>
           </Parallax>
+
+          <SlideTabs/>
   {/*CATALOGO*/}
   {/*OUTROS*/}
           <div className="section white">

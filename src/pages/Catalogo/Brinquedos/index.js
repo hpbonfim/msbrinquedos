@@ -7,7 +7,6 @@ const Brinquedos = () => {
     const contentAlignStyle = {
         justifyContent: "center",
         alignItems: "center",
-        display: "flex",
         textAlign: "center"
       };
 
@@ -32,259 +31,244 @@ const Brinquedos = () => {
     return (
         <div>
 {/*CATALOGO*/}
-            <div className="row container">
 {/*LOCACAO DE BRINQUEDOS*/}
             <Table>
                 <tbody>
 {/* TABLE CARD 1*/}
                     <tr>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
-                                            <img width="100" height="100" src={ imagens.cotonete }/>
-                                        </MediaBox>
-                                    <p><b> Luta de <br/> Cotonetes</b></p>
-                                </CardPanel>
-                            </div>
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
+                                        <img width="100" height="100" src={ imagens.cotonete }/>
+
+                                    </MediaBox>
+                                <p><b> Luta de <br/> Cotonetes</b></p>
+                            </CardPanel>
                         </td>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
-                                    <img width="100" height="100" src={ imagens.touroMecanico }/>
-                                    </MediaBox>
-                                    <p><b> Touro<br/>Mecânico </b></p>
-                                </CardPanel>
-                            </div>
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
+                                        <img width="100" height="100" src={ imagens.touroMecanico }/>
+
+                                </MediaBox>
+                                <p><b> Touro<br/>Mecânico </b></p>
+                            </CardPanel>
                         </td>
                     </tr>
 {/* TABLE CARD 2*/}
                     <tr>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
                                         <img width="100" height="100" src={ imagens.tomboLegal }/>
-                                    </MediaBox>
-                                    <p><b> Tombo<br/>Legal</b></p>
-                                </CardPanel>
-                            </div>
+
+                                </MediaBox>
+                                <p><b> Tombo Legal</b></p>
+                            </CardPanel>
                     </td>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
                                         <img width="100" height="100" src={ imagens.castelinho }/>
-                                    </MediaBox>
-                                    <p><b>Castelinho </b></p>
-                                </CardPanel>
-                            </div>
+
+                                </MediaBox>
+                                <p><b>Castelinho </b></p>
+                            </CardPanel>
                         </td>
                     </tr>
 {/* TABLE CARD 3*/}
                     <tr>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >      
                                         <img width="100" height="100" src={ imagens.pulaPeq }/>
-                                    </MediaBox>
-                                    <p><b>Pula-Pula<br/>Pequeno </b></p>
-                                </CardPanel>
-                            </div>
+
+                                </MediaBox>
+                                <p><b>Pula-Pula<br/>Pequeno </b></p>
+                            </CardPanel>
                         </td>
                                                <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
-                                    <img width="100" height="100" src={ imagens.pulaMed }/>
-                                    </MediaBox>
-                                    <p><b>Pula-Pula<br/>Medio </b></p>
-                                </CardPanel>
-                            </div>
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
+                                        <img width="100" height="100" src={ imagens.pulaMed }/>
+
+                                </MediaBox>
+                                <p><b>Pula-Pula<br/>Médio </b></p>
+                            </CardPanel>
                         </td>
                     </tr>
 {/* TABLE CARD 4*/}
                     <tr>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
-                                    <img width="100" height="100" src={ imagens.pulaGra }/>
-                                    </MediaBox>
-                                    <p><b>Pula-Pula<br/>Grande </b></p>
-                                </CardPanel>
-                            </div>
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
+                                        <img width="100" height="100" src={ imagens.pulaGra }/>
+
+                                </MediaBox>
+                                <p><b>Pula-Pula<br/>Grande </b></p>
+                            </CardPanel>
                         </td>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
                                         <img width="100" height="100" src={ imagens.kidPlay }/>
-                                    </MediaBox>
-                                    <p><b>Brinq <br/>Play </b></p>
-                                </CardPanel>
-                            </div>
+
+                                </MediaBox>
+                                <p><b>Brinq <br/>Play </b></p>
+                            </CardPanel>
                         </td>
                     </tr>
 {/* TABLE CARD 5*/}
                     <tr>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
                                         <img width="100" height="100" src={ imagens.piscinaBolinhaPeq }/>
-                                    </MediaBox>
-                                    <p><b> Piscina de<br/>Bolinha<br/>Pequeno</b></p>
-                                </CardPanel>
-                            </div>
+
+                                </MediaBox>
+                                <p><b> Piscina de<br/>Bolinha<br/>Pequeno</b></p>
+                            </CardPanel>
                         </td>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
                                         <img width="100" height="100" src={ imagens.piscinaBolinhaGra }/>
-                                    </MediaBox>
-                                    <p><b> Piscina de<br/>Bolinha<br/>Grande</b></p>
-                                </CardPanel>
-                            </div>
+
+                                </MediaBox>
+                                <p><b> Piscina de<br/>Bolinha<br/>Grande</b></p>
+                            </CardPanel>
                         </td>
                     </tr>
 {/* TABLE CARD 6*/}
                     <tr>
                         <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
-                                    <img width="100" height="100" src={imagens.tobogaPeq }/>
-                                    </MediaBox>
-                                    <p><b> Tobogã<br/>Pequeno</b></p>
-                                </CardPanel>
-                            </div>
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
+                                        <img width="100" height="100" src={imagens.tobogaPeq }/>
+
+                                </MediaBox>
+                                <p><b> Tobogã<br/>Pequeno</b></p>
+                            </CardPanel>
                         </td>
-                                               <td>
-                            <div style={contentAlignStyle}>
-                                <CardPanel>
-                                    <MediaBox
-                                        options={{
-                                            inDuration: 275,
-                                            onCloseEnd: null,
-                                            onCloseStart: null,
-                                            onOpenEnd: null,
-                                            onOpenStart: null,
-                                            outDuration: 200
-                                        }}
-                                        >
+                        <td>
+                            <CardPanel style={contentAlignStyle}>
+                                <MediaBox
+                                    options={{
+                                        inDuration: 275,
+                                        onCloseEnd: null,
+                                        onCloseStart: null,
+                                        onOpenEnd: null,
+                                        onOpenStart: null,
+                                        outDuration: 200
+                                    }}
+                                    >
                                     <img width="100" height="100" src={ imagens.tobogaGra }/>
-                                    </MediaBox>
-                                    <p><b>Tobogã<br/>Grande </b></p>
-                                </CardPanel>
-                            </div>
+                                </MediaBox>
+                                <p><b>Tobogã<br/>Grande </b></p>
+                            </CardPanel>
                         </td>
                     </tr>       
                 </tbody>
             </Table>
-        </div>
     </div>
     );
   };
