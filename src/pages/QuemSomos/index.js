@@ -30,9 +30,9 @@ const QuemSomos = () => {
                 <div className="grey-text text-darken-3 lighten-3">
                     <h5>Somos uma empresa especializada em: </h5><br/>
                     <b>
-                        <p>&nbsp;✓ Locacao de espacos para festas com decoracoes sob demanda(opcional).<br/></p>
-                        <p>&nbsp;✓ Locacao de brinquedos, mesas e cadeiras sob encomenda.<br/></p>
-                        <p> &nbsp;✓ Reformas de diversos brinquedos inflaveis.<br/></p>
+                        <p>&nbsp;✓ Locação de espacos para festas com decorações sob demanda(opcional).<br/></p>
+                        <p>&nbsp;✓ Locação de brinquedos, mesas e cadeiras sob encomenda.<br/></p>
+                        <p> &nbsp;✓ Reformas de diversos brinquedos infláveis.<br/></p>
                     </b>              
                 </div>
 
@@ -53,7 +53,7 @@ const QuemSomos = () => {
                         title="👇"
                     >
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
-                        Sua Festa comeca aqui! 📲
+                        Sua Festa começa aqui! 📲
                         </h5>
                         <img alt="" src={imagens.slide1}/>
                     </Tab>
@@ -67,7 +67,7 @@ const QuemSomos = () => {
                         title="👇"
                     >
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
-                            Diversao garantida! 🎉
+                            Diversão garantida! 🎉
                         </h5>
                         <img alt="" src={imagens.slide2} />
                     </Tab>
@@ -79,10 +79,9 @@ const QuemSomos = () => {
                         swipeable: true
                         }}
                         title="👇"
-
                     >
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
-                        Locacoes a pronta entrega! ⏱
+                        Locações a pronta entrega! ⏱
                         </h5>
                         <img alt="" src={imagens.slide3}/>
                     </Tab>  
@@ -94,7 +93,6 @@ const QuemSomos = () => {
                         swipeable: true
                         }}
                         title="👇"
-
                     >
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
                             Comprometimento! 📝
@@ -109,7 +107,6 @@ const QuemSomos = () => {
                         swipeable: true
                         }}
                         title="👇"
-
                     >
                         <h5 style={contentAlignStyle} className="light text-lighten-3">
                             Qualidade e Seguranca! 🛡

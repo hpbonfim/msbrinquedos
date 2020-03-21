@@ -34,7 +34,6 @@ const Brinquedos = () => {
 {/*CATALOGO*/}
             <div className="row container">
 {/*LOCACAO DE BRINQUEDOS*/}
-            <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locação de Brinquedos</h4></b>              
             <Table>
                 <tbody>
 {/* TABLE CARD 1*/}
@@ -73,7 +72,7 @@ const Brinquedos = () => {
                                         >
                                     <img width="100" height="100" src={ imagens.touroMecanico }/>
                                     </MediaBox>
-                                    <p><b> Touro<br/>Mecanico </b></p>
+                                    <p><b> Touro<br/>Mecânico </b></p>
                                 </CardPanel>
                             </div>
                         </td>
@@ -259,7 +258,7 @@ const Brinquedos = () => {
                                         >
                                     <img width="100" height="100" src={imagens.tobogaPeq }/>
                                     </MediaBox>
-                                    <p><b> Toboga<br/>Pequeno</b></p>
+                                    <p><b> Tobogã<br/>Pequeno</b></p>
                                 </CardPanel>
                             </div>
                         </td>
@@ -278,7 +277,7 @@ const Brinquedos = () => {
                                         >
                                     <img width="100" height="100" src={ imagens.tobogaGra }/>
                                     </MediaBox>
-                                    <p><b>Toboga<br/>Grande </b></p>
+                                    <p><b>Tobogã<br/>Grande </b></p>
                                 </CardPanel>
                             </div>
                         </td>

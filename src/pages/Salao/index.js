@@ -16,9 +16,14 @@ const Salao = () => {
         <div>
             <div className="row container">
                 <h3 className="header" style={contentAlignStyle}>
-                    Locacao de Espaco para Festas
+                    Locação de Espaço para Festas
                 </h3>
-                <h6 style={contentAlignStyle}>Excelente espaco para realizacoes de pequenas e medios eventos:</h6> <br/>
+                <h6 style={contentAlignStyle}>Excelente espaço para realizações de pequenas e médios eventos:</h6> <br/>
+                <b >
+                    <p style={contentAlignStyle}>&nbsp;✓ Espaços para festas com decorações sob demanda(opcional).<br/></p>
+                    <p style={contentAlignStyle}> &nbsp;✓ Diversos brinquedos para livre utilização.<br/></p>
+                    <p style={contentAlignStyle}>&nbsp;✓ Mesas e cadeiras a disposição.<br/></p>
+                </b>              
             </div>
             <div style={contentAlignStyle}>
                 <MediaBox
@@ -37,13 +42,6 @@ const Salao = () => {
                         width="300" height="300"
                     />
                     </MediaBox>
-            </div>
-            <div  className="grey-text text-darken-3 lighten-3">
-                <b >
-                    <p style={contentAlignStyle}>&nbsp;✓ Espacos para festas com decoracoes sob demanda(opcional).<br/></p>
-                    <p style={contentAlignStyle}> &nbsp;✓ Diversos brinquedos para livre utilizacao.<br/></p>
-                    <p style={contentAlignStyle}>&nbsp;✓ Mesas e cadeiras a disposicao.<br/></p>
-                </b>              
             </div>
       </div>
     );

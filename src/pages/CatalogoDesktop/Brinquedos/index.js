@@ -10,7 +10,6 @@ const BrinquedosDesktop = () => {
         display: "flex",
         textAlign: "center"
       };
-
     
     const imagens = {
         cotonete: "https://firebasestorage.googleapis.com/v0/b/ms-brinquedos.appspot.com/o/cotonete.jpeg?alt=media&token=67466c01-3b9b-46e4-8115-8baf9ec7eec5",
@@ -33,7 +32,7 @@ const BrinquedosDesktop = () => {
         <div>
 {/*CATALOGO*/}
 {/*LOCACAO DE BRINQUEDOS*/}
-            <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locação de Brinquedos</h4></b>              
+               
             <Table>
                 <tbody>
 {/* TABLE CARD 1*/}
@@ -72,7 +71,7 @@ const BrinquedosDesktop = () => {
                                         >
                                     <img width="150" height="150" src={ imagens.touroMecanico }/>
                                     </MediaBox>
-                                    <p><b> Touro<br/>Mecanico </b></p>
+                                    <p><b> Touro<br/>Mecânico </b></p>
                                 </CardPanel>
                             </div>
                         </td>
@@ -249,7 +248,7 @@ const BrinquedosDesktop = () => {
                                         >
                                     <img width="150" height="150" src={imagens.tobogaPeq }/>
                                     </MediaBox>
-                                    <p><b> Toboga<br/>Pequeno</b></p>
+                                    <p><b> Tobogã<br/>Pequeno</b></p>
                                 </CardPanel>
                             </div>
                         </td>
@@ -268,7 +267,7 @@ const BrinquedosDesktop = () => {
                                         >
                                     <img width="150" height="150" src={ imagens.tobogaGra }/>
                                     </MediaBox>
-                                    <p><b>Toboga<br/>Grande </b></p>
+                                    <p><b>Tobogã<br/>Grande </b></p>
                                 </CardPanel>
                             </div>
                         </td>

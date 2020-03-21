@@ -23,19 +23,14 @@ const OutrosDesktop = () => {
         <div>
 {/*CATALOGO*/}
             <div className="row container">
-                <h3 style={contentAlignStyle} className="header">
-                    Catalogo
-                </h3>
-                
 {/*LOCACAO DE MESAS E CADEIRAS*/}
-            <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locação de Mesas, Cadeiras e Barracas</h4></b>              
             <Table>
                 <tbody>
                     <tr>
                         <td>
                             <div style={contentAlignStyle}>
                                 <CardPanel>
-                                    <img width="100" height="100" src={imagens.cadeira}/>
+                                    <img width="100" height="115" src={imagens.cadeira}/>
                                     <p><b>Cadeiras</b></p>
                                 </CardPanel>
                             </div>
@@ -43,7 +38,7 @@ const OutrosDesktop = () => {
                         <td>
                             <div style={contentAlignStyle}>
                                 <CardPanel>
-                                    <img width="100" height="100" src={imagens.mesa}/>
+                                    <img width="100" height="115" src={imagens.mesa}/>
                                     <p><b>Mesas</b></p>
                                 </CardPanel>
                             </div>

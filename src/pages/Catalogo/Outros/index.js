@@ -11,6 +11,9 @@ const Outros = () => {
         textAlign: "center"
       };
 
+    const backgroundWhite = {
+       backgroundColor: "white"
+    };
     
     const imagens = {
         mesa: "https://firebasestorage.googleapis.com/v0/b/ms-brinquedos.appspot.com/o/mesa-de-plastico.png?alt=media&token=b2330857-f236-483e-bba3-9c120e2bcfd4",
@@ -23,12 +26,7 @@ const Outros = () => {
         <div>
 {/*CATALOGO*/}
             <div className="row container">
-                <h3 style={contentAlignStyle} className="header">
-                    Catalogo
-                </h3>
-                
 {/*LOCACAO DE MESAS E CADEIRAS*/}
-            <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locação de Mesas e Cadeiras</h4></b>              
             <Table>
                 <tbody>
                     <tr>
@@ -54,7 +52,6 @@ const Outros = () => {
             </Table>
 
 {/*LOCACAO DE BRINQUEDOS*/}
-            <b><h4 className="grey-text text-darken-3 lighten-3" style={contentAlignStyle}>Locação de Barracas</h4></b>              
             <Table>
                 <tbody>
                     <tr>

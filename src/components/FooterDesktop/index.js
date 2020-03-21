@@ -50,13 +50,13 @@ const Footer = () => {
                 <ul className="icons">
                     <li><a href="https://wa.me/5511940182385?text=Oi,%20 MS Brinquedos!%20Quero%20solicitar%20um%20orçamento!"><FontAwesomeIcon size="2x" icon={faWhatsappSquare} style={{color:'#075e54'}} /></a></li>
                     <li><a href="tel:+5511940182385"><FontAwesomeIcon size="2x" icon={faPhoneSquare} style={{color:'black'}} /></a></li>
-                    <li><a href="mailto:salvadorbrinquedos@hotmail.com?subject=Solicitaçao%20de%20Orçamento&body=Gostaria%20de%20alugar%20os%20brinquedos%20que%20escolhi%20no%20site%20https://www.msbrinquedos.com.br"><FontAwesomeIcon size="2x"  icon={faEnvelopeSquare} style={{color:'#c71610'}}/></a></li>
+                    <li><a href="mailto:salvadorbrinquedos@hotmail.com?subject=Solicitação%20de%20Orçamento&body=Gostaria%20de%20alugar%20algums%20brinquedos%20https://www.msbrinquedos.com.br"><FontAwesomeIcon size="2x"  icon={faEnvelopeSquare} style={{color:'#c71610'}}/></a></li>
                 </ul>
             </div>
         </div>
         <small>
             <ul>
-                <li><b>MS Brinquedos, Decoracoes, Reformas e Locacoes</b></li>
+                <li><b>MS Brinquedos, Decorações, Reformas e Locações</b></li>
                 <li>Al. Jose Lopes de Almeida, 257 - Capão Redondo</li>
                 <li>São Paulo - SP, 05859-270</li>
                 <li>CNPJ: 10.682.583/0001-31</li>

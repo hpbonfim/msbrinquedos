@@ -32,7 +32,7 @@ const FloatButton = () => {
       }
 
       function whatsapp() {
-        window.open("https://wa.me/5511940182385?text=Oi,%20 MS Brinquedos!%20Quero%20solicitar%20um%20orçamento!", "_blank")
+        window.open("https://wa.me/5511940182385?text=Oi,%20MS Brinquedos!%20Quero%20solicitar%20um%20orçamento!", "_blank")
       }
 
       function telefone() {
@@ -40,7 +40,7 @@ const FloatButton = () => {
       }
 
       function email() {
-        window.open("mailto:salvadorbrinquedos@hotmail.com?subject=Solicitaçao%20de%20Orçamento&body=Gostaria%20de%20alugar%20os%20brinquedos%20que%20escolhi%20no%20site%20https://www.msbrinquedos.com.br",  "_blank")
+        window.open("mailto:salvadorbrinquedos@hotmail.com?subject=Solicitação%20de%20Orçamento&body=Gostaria%20de%20alugar%20alguns%20brinquedos%20%20https://www.msbrinquedos.com.br",  "_blank")
       }
    
     return (
