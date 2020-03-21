@@ -7,7 +7,8 @@ const Brinquedos = () => {
     const contentAlignStyle = {
         justifyContent: "center",
         alignItems: "center",
-        textAlign: "center"
+        textAlign: "center",
+        display: "flex"
       };
 
     
@@ -37,7 +38,8 @@ const Brinquedos = () => {
 {/* TABLE CARD 1*/}
                     <tr>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -53,9 +55,11 @@ const Brinquedos = () => {
                                     </MediaBox>
                                 <p><b> Luta de <br/> Cotonetes</b></p>
                             </CardPanel>
+                            </div>
                         </td>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -71,12 +75,14 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b> Touro<br/>Mecânico </b></p>
                             </CardPanel>
+                            </div>
                         </td>
                     </tr>
 {/* TABLE CARD 2*/}
                     <tr>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -92,9 +98,11 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b> Tombo Legal</b></p>
                             </CardPanel>
+                            </div>
                     </td>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -110,12 +118,14 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b>Castelinho </b></p>
                             </CardPanel>
+                            </div>
                         </td>
                     </tr>
 {/* TABLE CARD 3*/}
                     <tr>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -131,9 +141,11 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b>Pula-Pula<br/>Pequeno </b></p>
                             </CardPanel>
+                            </div>
                         </td>
-                                               <td>
-                            <CardPanel style={contentAlignStyle}>
+                        <td>
+                            <div style={contentAlignStyle}>       
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -149,12 +161,14 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b>Pula-Pula<br/>Médio </b></p>
                             </CardPanel>
+                            </div>
                         </td>
                     </tr>
 {/* TABLE CARD 4*/}
                     <tr>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -170,9 +184,11 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b>Pula-Pula<br/>Grande </b></p>
                             </CardPanel>
+                            </div>
                         </td>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -188,12 +204,14 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b>Brinq <br/>Play </b></p>
                             </CardPanel>
+                            </div>
                         </td>
                     </tr>
 {/* TABLE CARD 5*/}
                     <tr>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -209,9 +227,11 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b> Piscina de<br/>Bolinha<br/>Pequeno</b></p>
                             </CardPanel>
+                            </div>
                         </td>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -227,12 +247,14 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b> Piscina de<br/>Bolinha<br/>Grande</b></p>
                             </CardPanel>
+                            </div>
                         </td>
                     </tr>
 {/* TABLE CARD 6*/}
                     <tr>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -248,9 +270,11 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b> Tobogã<br/>Pequeno</b></p>
                             </CardPanel>
+                            </div>
                         </td>
                         <td>
-                            <CardPanel style={contentAlignStyle}>
+                            <div style={contentAlignStyle}>
+                            <CardPanel >
                                 <MediaBox
                                     options={{
                                         inDuration: 275,
@@ -265,6 +289,7 @@ const Brinquedos = () => {
                                 </MediaBox>
                                 <p><b>Tobogã<br/>Grande </b></p>
                             </CardPanel>
+                        </div>
                         </td>
                     </tr>       
                 </tbody>
