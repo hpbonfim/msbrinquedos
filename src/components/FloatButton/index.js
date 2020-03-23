@@ -7,8 +7,6 @@ import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { faHeadset } from "@fortawesome/free-solid-svg-icons";
 import { Button } from 'react-materialize';
 
-
-
 const FloatButton = () => {
 
       function facebook() {

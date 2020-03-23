@@ -1,7 +1,6 @@
 import React from 'react';
 import { Table, CardPanel } from 'react-materialize';
 
-
 const Outros = () => {
 
     const contentAlignStyle = {
