@@ -6,8 +6,9 @@
 ``` bash
 $ npm start
 ```
-> Testes finais para producao!
+> Testes finais
 
 ```bash
 $ npm run build
 ```
+
